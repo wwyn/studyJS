@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    var v = [7,1,2,3,4,5,6];
+    // for (var i = v.length-1; i >= 0; i --) {
+    //     console.log(v[i]);
+    // }
+    //最大值
+    // for (var i = 0; i < v.length; i++) {
+    //     var max = v[0];
+    //     if(v[i]>max) {
+    //         max = v[i];
+    //     }
+    // }
+    // console.log(max);
+    //平均数
+    // var sum = 0;
+    // for (var i = 0; i < v.length; i++) {
+    //     sum = sum + v[i];
+    // }
+    // var mean = sum/i;
+    // console.log(mean);
+    var b = [];
+    for (var i = 0; i < v.length; i++) {
+        b[i] = v[i+1];
+        if (i  >= v.length - 1) {
+            b[i] = v[0];
+        }
+    }
+    console.log(b);
+
+</script>
+</body>
+</html>
